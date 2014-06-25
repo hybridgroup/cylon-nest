@@ -21,7 +21,25 @@ Install the module with: `npm install cylon-nest`
 
 ## Examples
 
-Coming soon...
+```javascript
+var Cylon = require('cylon');
+
+Cylon.robot({
+  connection: { 
+  	name: 'nest', 
+  	adaptor: 'nest', 
+  	accessToken: 'XXX', 
+  	deviceId: 'ABC123'
+  },
+  device: {name: 'thermostat', driver: 'nest-thermostat'},
+
+  work: function(my) {
+    every((60).seconds(), function(){
+      console.log(my.thermostat.ambientTemperatureC());
+    });
+  }
+}).start();
+```
 
 We currently have drivers for the following Nest devices:
 

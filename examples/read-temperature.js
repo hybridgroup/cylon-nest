@@ -4,7 +4,7 @@ Cylon.robot({
   connection: { 
   	name: 'nest', 
   	adaptor: 'nest', 
-  	token: 'XXX', 
+  	accessToken: 'XXX', 
   	deviceId: 'ABC123'
   },
   device: {name: 'thermostat', driver: 'nest-thermostat'},
