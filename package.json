@@ -10,22 +10,19 @@
     "type": "git",
     "url": "https://github.com/hybridgroup/cylon-nest"
   },
-
   "license": "Apache 2.0",
-
   "devDependencies": {
     "sinon-chai": "2.5.0",
-    "chai":       "1.9.1",
-    "mocha":      "1.18.2",
-    "sinon":      "1.9.1",
-    "jshint":     "2.5.0"
+    "chai": "1.9.1",
+    "mocha": "1.18.2",
+    "sinon": "1.9.1",
+    "jshint": "2.5.0"
   },
-
   "peerDependencies": {
     "cylon": ">=0.15.0 < 1"
   },
-
   "dependencies": {
-    "cylon": "~0.15.0"
+    "cylon": "~0.15.0",
+    "firebase": "^1.0.17"
   }
 }
