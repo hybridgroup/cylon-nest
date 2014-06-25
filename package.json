@@ -1,0 +1,31 @@
+{
+  "name": "cylon-nest",
+  "version": "0.1.0",
+  "main": "lib/cylon-nest.js",
+  "description": "Cylon adaptor for the Nest",
+  "homepage": "http://cylonjs.com",
+  "bugs": "https://github.com/hybridgroup/cylon-nest/issues",
+  "author": "The Hybrid Group <cylonjs@hybridgroup.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hybridgroup/cylon-nest"
+  },
+
+  "license": "Apache 2.0",
+
+  "devDependencies": {
+    "sinon-chai": "2.5.0",
+    "chai":       "1.9.1",
+    "mocha":      "1.18.2",
+    "sinon":      "1.9.1",
+    "jshint":     "2.5.0"
+  },
+
+  "peerDependencies": {
+    "cylon": ">=0.15.0 < 1"
+  },
+
+  "dependencies": {
+    "cylon": "~0.15.0"
+  }
+}
