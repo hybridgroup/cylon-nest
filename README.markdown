@@ -29,7 +29,9 @@ We currently have drivers for the following Nest devices:
 
 ## Connecting
 
-Coming soon...
+You need to obtain an access token for your Nest account in order to authenticate, as instructed here: https://developer.nest.com/documentation/how-to-auth
+
+Once you have done this, you should be able to use the `access_token` from the Nest developer website "Clients" page to make API calls from Cylon.js
 
 ## Documentation
 We're busy adding documentation to our web site at http://cylonjs.com/ please check there as we continue to work on Cylon.js
