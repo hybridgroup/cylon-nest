@@ -25,17 +25,28 @@ Install the module with: `npm install cylon-nest`
 var Cylon = require('cylon');
 
 Cylon.robot({
-  connection: { 
-  	name: 'nest', 
-  	adaptor: 'nest', 
-  	accessToken: 'XXX', 
-  	deviceId: 'ABC123'
+  connection: {
+  	name: 'nest',
+  	adaptor: 'nest',
+  	accessToken: 'XXX',
   },
-  device: {name: 'thermostat', driver: 'nest-thermostat'},
+
+  device: {
+    name: 'thermostat',
+    driver: 'nest-thermostat',
+    deviceId: 'XXX'
+  },
 
   work: function(my) {
+    // Listen to the status event to obtain all thermostat
+    // related data in a single object.
+    my.thermostat.on('status', function(data) {
+      console.log('The Thermostat at a glance--->', data);
+    });
+
     every((60).seconds(), function(){
-      console.log(my.thermostat.ambientTemperatureC());
+      console.log('NEST ambient temp C:', my.thermostat.ambientTemperatureC());
+      console.log('NEST ambient temp F:', my.thermostat.ambientTemperatureF());
     });
   }
 }).start();
@@ -44,12 +55,25 @@ Cylon.robot({
 We currently have drivers for the following Nest devices:
 
 - Thermostat
+- Nest Home
 
 ## Connecting
 
-You need to obtain an access token for your Nest account in order to authenticate, as instructed here: https://developer.nest.com/documentation/how-to-auth
+First tou need to setup a developer account with Nest Labs:
 
-Once you have done this, you should be able to use the `access_token` from the Nest developer website "Clients" page to make API calls from Cylon.js
+https://developer.nest.com/
+
+Once the account is created you need to create a client app, the
+developer portal UI will guide you through it, you do not need to add an OAuth
+redirect URL, since we are going be using the pin generated when no
+redirect URL is provided to get an access token that will let us connect
+to the API.
+
+Next step is to obtain the access token for your Nest account in order
+to authenticate, as instructed here: https://developer.nest.com/documentation/how-to-auth
+
+Once you have done this, you should be able to use the `access_token` you obtained, with the
+generate access token url listed in the clients section of the Nest developer portal, to make API calls from Cylon.js
 
 ## Documentation
 We're busy adding documentation to our web site at http://cylonjs.com/ please check there as we continue to work on Cylon.js
