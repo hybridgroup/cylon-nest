@@ -1,9 +1,9 @@
 'use strict';
 
-var Nest = source("adaptor");
+var Adaptor = source("adaptor");
 
 describe("Cylon.Adaptors.Nest", function() {
-  var adaptor = new Nest();
+  var adaptor = new Adaptor({ extraParams: {} });
 
   it("needs tests");
 });
