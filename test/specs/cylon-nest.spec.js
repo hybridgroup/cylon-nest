@@ -4,7 +4,7 @@ var module = source("cylon-nest");
 
 var Adaptor = source('adaptor'),
     Thermostat = source('thermostat'),
-    Nest = source('nest');
+    Nest = source('nest-home');
 
 describe("Cylon.Nest", function() {
   describe("#register", function() {
