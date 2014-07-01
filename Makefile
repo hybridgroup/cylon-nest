@@ -15,3 +15,9 @@ bdd:
 # Run JSHint
 lint:
 	@$(BIN)/jshint ./lib
+
+# Cuts/publishes a new release
+release:
+	@git tag -m "$(VERSION)" v$(VERSION)
+	@git push --tags
+	@npm publish ./     

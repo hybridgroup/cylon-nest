@@ -3,7 +3,8 @@
 var module = source("cylon-nest");
 
 var Adaptor = source('adaptor'),
-    Thermostat = source('thermostat');
+    Thermostat = source('thermostat'),
+    Nest = source('nest-home');
 
 describe("Cylon.Nest", function() {
   describe("#register", function() {
@@ -14,14 +15,21 @@ describe("Cylon.Nest", function() {
 
   describe("thermostat driver", function() {
     it("returns an instance of the Thermostat", function() {
-      var args = { device: {} };
+      var args = { name: 'nest-thermostat', device: {}, extraParams: {} };
       expect(module.driver(args)).to.be.instanceOf(Thermostat);
+    });
+  });
+
+  describe("nest-home driver", function() {
+    it("returns an instance of nest driver", function() {
+      var args = { name: 'nest-home', device: {}, extraParams: {} };
+      expect(module.driver(args)).to.be.instanceOf(Nest);
     });
   });
 
   describe("#adaptor", function() {
     it("returns an instance of the Adaptor", function() {
-      expect(module.adaptor()).to.be.instanceOf(Adaptor);
+      expect(module.adaptor({ extraParams: {} })).to.be.instanceOf(Adaptor);
     });
   });
 });
