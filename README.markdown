@@ -96,7 +96,7 @@ Thank you!
 
 ## Release History
 
-None yet...
+0.1.0 First release. Added thermostat and home support.
 
 ## License
 
