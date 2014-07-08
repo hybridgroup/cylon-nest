@@ -96,7 +96,9 @@ Thank you!
 
 ## Release History
 
-0.1.0 First release. Added thermostat and home support.
+Version 0.2.0 - Compatibility with Cylon 0.16.0
+
+Version 0.1.0 - First release. Added thermostat and home support.
 
 ## License
 
