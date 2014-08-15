@@ -1,72 +1,72 @@
 # Commands
 
-  ## deviceName()
+## deviceName()
 
-  Gets the name of the nest
+Gets the name of the nest
 
-  ## ambientTemperatureF()
+## ambientTemperatureF()
 
-  Gets the ambient temperature in Fº
+Gets the ambient temperature in Fº
 
-  ## ambientTemperatureC()
+## ambientTemperatureC()
 
-  Gets the ambient temperature in Cº
+Gets the ambient temperature in Cº
 
-  ## targetTemperatureF()
+## targetTemperatureF()
 
-  Gets the target temperature in Fº
+Gets the target temperature in Fº
 
-  ## targetTemperatureC()
+## targetTemperatureC()
 
-  Gets the ambient temperature in Cº
+Gets the ambient temperature in Cº
 
-  ## setTargetTemperatureF(value)
+## setTargetTemperatureF(value)
 
-  Sets the target temperature in Fº
-  
-  ##### Params
-  
-  - **value** - The value for the temperature
-  
-  ##### Returns
-  
-  `nil`
-  
-  ## setTargetTemperatureC(value)
-  
-  Sets the target temperature in Cº
+Sets the target temperature in Fº
 
-  ##### Params
+##### Params
 
-  - **value** - The value for the temperature
-  
-  ##### Returns
-  
-  `nil`
-  
-  ## read(key, callback)
-  
-  Reads the params of the device.
-  
-  #####Params
+- **value** - The value for the temperature
 
-  - **key** - The key of the device
-  - **callback** - The data of the callback
-  
-  ##### Returns
-  
-  `nil`
+##### Returns
 
-  ## write(key, value, callback)
-  
-  Writes the params of the device.
-  
-  ##### Params
+`nil`
 
-  - **key** - The key of the device
-  - **value** - The value of the device
-  - **callback** - The data of the callback
+## setTargetTemperatureC(value)
 
-  ##### Returns
-  
-  `nil`
+Sets the target temperature in Cº
+
+##### Params
+
+- **value** - The value for the temperature
+
+##### Returns
+
+`nil`
+
+## read(key, callback)
+
+Reads the params of the device.
+
+#####Params
+
+- **key** - The key of the device
+- **callback** - The data of the callback
+
+##### Returns
+
+`nil`
+
+## write(key, value, callback)
+
+Writes the params of the device.
+
+##### Params
+
+- **key** - The key of the device
+- **value** - The value of the device
+- **callback** - The data of the callback
+
+##### Returns
+
+`nil`

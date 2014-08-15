@@ -1,94 +1,94 @@
 # Commands
 
-  ## structures()
+## structures()
 
-  Gets all the structures of your home.
+Gets all the structures of your home.
 
-  ## structureName(structureId)
+## structureName(structureId)
 
-  Gets the name of a specific structure.
+Gets the name of a specific structure.
 
-  ##### Params
-  
-  - **structureId** - The ID of the structure
+##### Params
 
-  ##### Returns
+- **structureId** - The ID of the structure
 
-  `nil`
+##### Returns
 
-  ## thermostats(structureId)
+`nil`
 
-  Gets the thermostat of a specific structure.
+## thermostats(structureId)
 
-  ##### Params
+Gets the thermostat of a specific structure.
 
-  - **structureId** - The ID of the structure
+##### Params
 
-  ##### Returns
+- **structureId** - The ID of the structure
 
-  `nil`
+##### Returns
 
-  ## smokeCoAlarms(structureId)
+`nil`
 
-  Gets the smoke alarms of a specific structure.
+## smokeCoAlarms(structureId)
 
-  ##### Params
+Gets the smoke alarms of a specific structure.
 
-  - **structureId** - The ID of the structure
+##### Params
 
-  ##### Returns
-  
-  `nil`
+- **structureId** - The ID of the structure
 
-  ## away(structureId, val)
+##### Returns
 
-  Sets the device in away mode.
+`nil`
 
-  ##### Params
+## away(structureId, val)
 
-  - **structureId** - The ID of the structure
-  - **val**  - The value of the device
+Sets the device in away mode.
 
-  ##### Returns
+##### Params
 
-  `nil`
+- **structureId** - The ID of the structure
+- **val**  - The value of the device
 
-  ## eta(structureId)
+##### Returns
 
-   Sets the device a signal to prepare the home for the user's arrival.
+`nil`
 
-  ##### Params
-  
-  - **structureId** - The ID of the structure
-  
-  ##### Returns
-  
-  `nil`
+## eta(structureId)
 
-  ## read(key, structureId, callback)
+ Sets the device a signal to prepare the home for the user's arrival.
 
-  Reads a specific device.
+##### Params
 
-  ##### Params
+- **structureId** - The ID of the structure
 
-  - **key** - The key of the device
-  - **value** - The value of the device
-  - **callback** - The data of the callback
+##### Returns
 
-  ##### Returns
+`nil`
 
-  `nil`
+## read(key, structureId, callback)
 
-  ## write(key, value, structureId, callback)
+Reads a specific device.
 
-  Writes a specific device.
+##### Params
 
-  ##### Params 
+- **key** - The key of the device
+- **value** - The value of the device
+- **callback** - The data of the callback
 
-  - **key** - The key of the device
-  - **value** - The value of the device
-  - **callback** - The data of the callback
-  
-  ##### Returns
+##### Returns
 
-  `nil`
+`nil`
+
+## write(key, value, structureId, callback)
+
+Writes a specific device.
+
+##### Params 
+
+- **key** - The key of the device
+- **value** - The value of the device
+- **callback** - The data of the callback
+
+##### Returns
+
+`nil`
