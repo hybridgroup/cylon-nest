@@ -15,14 +15,14 @@ describe("Cylon.Nest", function() {
 
   describe("thermostat driver", function() {
     it("returns an instance of the Thermostat", function() {
-      var args = { name: 'nest-thermostat', device: {}, extraParams: {} };
+      var args = { name: 'nest-thermostat', device: { connection: {} }, extraParams: {} };
       expect(module.driver(args)).to.be.instanceOf(Thermostat);
     });
   });
 
   describe("nest-home driver", function() {
     it("returns an instance of nest driver", function() {
-      var args = { name: 'nest-home', device: {}, extraParams: {} };
+      var args = { name: 'nest-home', device: { connection: {} }, extraParams: {} };
       expect(module.driver(args)).to.be.instanceOf(Nest);
     });
   });
