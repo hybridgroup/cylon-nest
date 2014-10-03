@@ -13,7 +13,7 @@ sister project Gobot (http://gobot.io).
 For more information about Cylon, check out our repo at
 https://github.com/hybridgroup/cylon
 
-[![Build Status](https://secure.travis-ci.org/hybridgroup/cylon-nest.png?branch=master)](http://travis-ci.org/hybridgroup/cylon-nest)
+[![Build Status](https://secure.travis-ci.org/hybridgroup/cylon-nest.png?branch=master)](http://travis-ci.org/hybridgroup/cylon-nest) [![Code Climate](https://codeclimate.com/github/hybridgroup/cylon-nest/badges/gpa.svg)](https://codeclimate.com/github/hybridgroup/cylon-nest) [![Test Coverage](https://codeclimate.com/github/hybridgroup/cylon-nest/badges/coverage.svg)](https://codeclimate.com/github/hybridgroup/cylon-nest)
 
 ## Getting Started
 
