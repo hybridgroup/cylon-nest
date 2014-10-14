@@ -27,7 +27,7 @@ Cylon.robot({
       console.log('Nest home away status:', my.home.away());
       console.log('Nest home eta:', my.home.eta());
 
-      my.home.read('country_code', sId, function(data) {
+      my.home.read('country_code', my.home.structureId, function(data) {
         console.log("Nest home country id: ", data);
       });
 
