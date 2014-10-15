@@ -27,9 +27,9 @@ Cylon.robot({
       // using write function:
       my.thermostat.write('target_temperature_high_c', 30, function(err) {
         if (err) {
-          console.log('Target Temp was NOT updated!')
+          console.log('Target Temp was NOT updated!');
         } else {
-          console.log('Target Temp updated!')
+          console.log('Target Temp updated!');
         }
       });
     });
