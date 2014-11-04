@@ -7,29 +7,35 @@ var Adaptor = source('adaptor'),
     Nest = source('nest-home');
 
 describe("Cylon.Nest", function() {
-  describe("#register", function() {
-    it("should be a function", function() {
-      expect(module.register).to.be.a('function');
+  describe("#adaptors", function() {
+    it('is an array of supplied adaptors', function() {
+      expect(module.adaptors).to.be.eql(['nest']);
+    });
+  });
+
+  describe("#drivers", function() {
+    it('is an array of supplied drivers', function() {
+      expect(module.drivers).to.be.eql(['nest-thermostat', 'nest-home']);
     });
   });
 
   describe("thermostat driver", function() {
     it("returns an instance of the Thermostat", function() {
-      var args = { name: 'nest-thermostat', device: { connection: {} }, extraParams: {} };
+      var args = { driver: 'nest-thermostat', device: { connection: {} } };
       expect(module.driver(args)).to.be.instanceOf(Thermostat);
     });
   });
 
   describe("nest-home driver", function() {
     it("returns an instance of nest driver", function() {
-      var args = { name: 'nest-home', device: { connection: {} }, extraParams: {} };
+      var args = { driver: 'nest-home', device: { connection: {} } };
       expect(module.driver(args)).to.be.instanceOf(Nest);
     });
   });
 
   describe("#adaptor", function() {
     it("returns an instance of the Adaptor", function() {
-      expect(module.adaptor({ extraParams: {} })).to.be.instanceOf(Adaptor);
+      expect(module.adaptor({})).to.be.instanceOf(Adaptor);
     });
   });
 });
