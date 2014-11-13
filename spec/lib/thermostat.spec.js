@@ -4,7 +4,7 @@ var Thermostat = source("thermostat");
 
 describe("Cylon.Drivers.Nest.Thermostat", function() {
   var driver = new Thermostat({
-    device: { connection: 'connect' }
+    adaptor: {}
   });
 
   it("needs tests");

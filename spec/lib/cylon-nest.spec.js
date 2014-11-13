@@ -21,14 +21,14 @@ describe("Cylon.Nest", function() {
 
   describe("thermostat driver", function() {
     it("returns an instance of the Thermostat", function() {
-      var args = { driver: 'nest-thermostat', device: { connection: {} } };
+      var args = { driver: 'nest-thermostat' };
       expect(module.driver(args)).to.be.instanceOf(Thermostat);
     });
   });
 
   describe("nest-home driver", function() {
     it("returns an instance of nest driver", function() {
-      var args = { driver: 'nest-home', device: { connection: {} } };
+      var args = { driver: 'nest-home' };
       expect(module.driver(args)).to.be.instanceOf(Nest);
     });
   });
