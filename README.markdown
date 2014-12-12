@@ -25,16 +25,12 @@ Install the module with: `npm install cylon-nest`
 var Cylon = require('cylon');
 
 Cylon.robot({
-  connection: {
-  	name: 'nest',
-  	adaptor: 'nest',
-  	accessToken: 'XXX',
+  connections: {
+    nest: { adaptor: 'nest', accessToken: 'XXX' }
   },
 
-  device: {
-    name: 'thermostat',
-    driver: 'nest-thermostat',
-    deviceId: 'XXX'
+  devices: {
+    thermostat: { driver: 'nest-thermostat', deviceId: 'XXX' }
   },
 
   work: function(my) {
