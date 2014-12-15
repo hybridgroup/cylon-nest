@@ -1,20 +1,15 @@
 var Cylon = require('cylon');
 
 Cylon.robot({
-  connection: {
-    name: 'nest',
-    adaptor: 'nest',
-    accessToken: 'MY_ACCESS_TOKEN'
+  connections: {
+    nest: { adaptor: 'nest', accessToken: 'MY_ACCESS_TOKEN' }
   },
 
-  device: {
-    name: 'thermostat',
-    driver: 'nest-thermostat',
-    deviceId: 'DEVICE_ID'
+  devices: {
+    thermostat: { driver: 'nest-thermostat', deviceId: 'DEVICE_ID' }
   },
 
   work: function(my) {
-
     // Listen to the status event to obtain all thermostat
     // related data in a single object.
     my.thermostat.on('status', function(data) {

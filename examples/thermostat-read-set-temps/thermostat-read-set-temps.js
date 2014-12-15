@@ -1,16 +1,12 @@
 var Cylon = require('cylon');
 
 Cylon.robot({
-  connection: {
-    name: 'nest',
-    adaptor: 'nest',
-    accessToken: 'accessToken'
+  connections: {
+    nest: { adaptor: 'nest', accessToken: 'accessToken' }
   },
 
-  device: {
-    name: 'thermostat',
-    driver: 'nest-thermostat',
-    deviceId: 'DEVICE_ID'
+  devices: {
+    thermostat: { driver: 'nest-thermostat', deviceId: 'DEVICE_ID' }
   },
 
   work: function(my) {
