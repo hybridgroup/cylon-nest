@@ -1,4 +1,5 @@
-'use strict';
+/* jshint expr:true */
+"use strict";
 
 var Thermostat = source("thermostat");
 
@@ -7,5 +8,7 @@ describe("Cylon.Drivers.Nest.Thermostat", function() {
     connection: {}
   });
 
-  it("needs tests");
+  it("needs tests", function() {
+    expect(driver).to.be.an.instanceOf(Thermostat);
+  });
 });
