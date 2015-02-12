@@ -20,23 +20,28 @@ describe("Cylon.Nest", function() {
     });
   });
 
-  describe("thermostat driver", function() {
-    it("returns an instance of the Thermostat", function() {
-      var args = { driver: "nest-thermostat" };
-      expect(nest.driver(args)).to.be.instanceOf(Thermostat);
-    });
-  });
+  describe("#driver", function() {
+    var opts;
 
-  describe("nest-home driver", function() {
-    it("returns an instance of nest driver", function() {
-      var args = { driver: "nest-home" };
-      expect(nest.driver(args)).to.be.instanceOf(Home);
+    beforeEach(function() {
+      opts = { connection: {} };
+    });
+
+    it("can initialize a Nest Thermostat driver", function() {
+      opts.driver = "nest-thermostat";
+      expect((nest.driver(opts))).to.be.an.instanceOf(Thermostat);
+    });
+
+    it("can initialize a Nest Home driver", function() {
+      opts.driver = "nest-home";
+      expect((nest.driver(opts))).to.be.an.instanceOf(Home);
     });
   });
 
   describe("#adaptor", function() {
-    it("returns an instance of the Adaptor", function() {
-      expect(nest.adaptor({})).to.be.instanceOf(Adaptor);
+    it("returns an instance of the Nest Adaptor", function() {
+      var adaptor = nest.adaptor({ accessToken: "accessToken" });
+      expect(adaptor).to.be.instanceOf(Adaptor);
     });
   });
 });
