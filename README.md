@@ -17,7 +17,7 @@ https://github.com/hybridgroup/cylon
 
 ## How to Install
 
-    $ npm install cylon-nest
+    $ npm install cylon cylon-nest
 
 ## How to Use
 
