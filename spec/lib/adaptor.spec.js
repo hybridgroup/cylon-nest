@@ -23,7 +23,7 @@ describe("Cylon.Adaptors.Nest", function() {
     var fb, callback;
 
     beforeEach(function() {
-      fb = { auth: stub() };
+      fb = { auth: stub().yields() };
       callback = spy();
 
       adaptor.firebase = stub().returns(fb);
