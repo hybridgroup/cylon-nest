@@ -1,6 +1,6 @@
 {
   "name": "cylon-nest",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "main": "lib/cylon-nest.js",
   "description": "Cylon adaptor for the Nest",
   "homepage": "http://cylonjs.com",
@@ -19,7 +19,7 @@
     "jshint": "2.5.0"
   },
   "dependencies": {
-    "cylon": "~0.22.0",
+    "cylon": "~1.0.0",
     "firebase": "^1.0.17"
   }
 }
