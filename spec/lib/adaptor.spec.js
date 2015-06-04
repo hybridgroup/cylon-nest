@@ -23,7 +23,7 @@ describe("Cylon.Adaptors.Nest", function() {
     var fb, callback;
 
     beforeEach(function() {
-      fb = { auth: stub().yields() };
+      fb = { authWithCustomToken: stub().yields() };
       callback = spy();
 
       adaptor.firebase = stub().returns(fb);
@@ -37,7 +37,7 @@ describe("Cylon.Adaptors.Nest", function() {
     });
 
     it("tells the Firebase instance to auth", function() {
-      expect(fb.auth).to.be.calledWith("accessToken");
+      expect(fb.authWithCustomToken).to.be.calledWith("accessToken");
     });
 
     it("triggers the callback", function() {
