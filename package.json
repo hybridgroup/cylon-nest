@@ -20,6 +20,6 @@
   },
   "dependencies": {
     "cylon": "~1.0.0",
-    "firebase": "^1.0.17"
+    "firebase": "^2.2.6"
   }
 }

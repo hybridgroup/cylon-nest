@@ -65,6 +65,14 @@ Next step is to obtain the access token for your Nest account in order to authen
 
 Once you have done this, you should be able to use the `access_token` you obtained, with the generate access token url listed in the clients section of the Nest developer portal, to make API calls from Cylon.js
 
+## Nest Home Simulator
+
+You can use [Nest Home Simulator](https://developer.nest.com/documentation/cloud/home-simulator) to test your programs. Follow instructions for installation [here](https://developer.nest.com/documentation/cloud/home-simulator).
+
+Once you have the simulator installed, you can create the structures you need and add as many devices as each structure supports.
+
+You can now use your cylon program to interact with your simulated devices.
+
 ## Documentation
 We're busy adding documentation to our web site at http://cylonjs.com/ please check there as we continue to work on Cylon.js
 
