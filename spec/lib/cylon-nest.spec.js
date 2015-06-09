@@ -16,7 +16,9 @@ describe("Cylon.Nest", function() {
 
   describe("#drivers", function() {
     it("is an array of supplied drivers", function() {
-      expect(nest.drivers).to.be.eql(["nest-thermostat", "nest-home"]);
+      expect(nest.drivers).to.be.eql(
+        ["nest-thermostat", "nest-protect", "nest-home"]
+      );
     });
   });
 
