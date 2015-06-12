@@ -17,7 +17,7 @@ Cylon
       console.log("NEST target temp F:", bot.thermostat.targetTemperatureC());
       console.log("NEST target temp F:", bot.thermostat.targetTemperatureF());
 
-      bot.thermostat.setTargetTemperatureC(24);
+      bot.thermostat.targetTemperatureC(24);
 
       bot.thermostat.write("target_temperature_high_c", 30, function(err) {
         console.log("ERR OBJ =====>", err);

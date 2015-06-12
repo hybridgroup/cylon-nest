@@ -12,7 +12,7 @@ Cylon
     });
 
     every((30).seconds(), function(){
-      bot.thermostat.setTargetTemperatureC(24);
+      bot.thermostat.targetTemperatureC(24);
 
       // Set any attribute in the of the Nest thermostat that you have write
       // privileges for, using write function:

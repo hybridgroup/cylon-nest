@@ -2,7 +2,7 @@
 
 Cylon.js (http://cylonjs.com) is a JavaScript framework for robotics, physical computing, and the Internet of Things (IoT).
 
-This repository contains the Cylon adaptor for the [Nest](https://developer.nest.com) thermostat.
+This repository contains the Cylon adaptor for the [Nest](https://developer.nest.com) Home.
 
 Want to use Ruby on robots? Check out our sister project Artoo (http://artoo.io)
 
@@ -26,7 +26,8 @@ Cylon.robot({
   },
 
   devices: {
-    thermostat: { driver: 'nest-thermostat', deviceId: 'XXX' }
+    thermostat: { driver: 'nest-thermostat', deviceId: 'XXX' },
+    protect: { driver: 'nest-protect', deviceId: 'XXX' }
   },
 
   work: function(my) {
@@ -36,9 +37,16 @@ Cylon.robot({
       console.log('The Thermostat at a glance--->', data);
     });
 
+    my.protect.on('status', function(data) {
+      console.log('The Protect at a glance--->', data);
+    });
+
     every((60).seconds(), function(){
-      console.log('NEST ambient temp C:', my.thermostat.ambientTemperatureC());
-      console.log('NEST ambient temp F:', my.thermostat.ambientTemperatureF());
+      console.log('NEST thermostat ambient temp C:', my.thermostat.ambientTemperatureC());
+      console.log('NEST thermostat ambient temp F:', my.thermostat.ambientTemperatureF());
+
+      console.log('NEST protect co alarm state:', my.protect.coAlarmState());
+      console.log('NEST protect smoke alarm state:', my.protect.smokeAlarmState());
     });
   }
 }).start();
@@ -47,6 +55,7 @@ Cylon.robot({
 We currently have drivers for the following Nest devices:
 
 - Thermostat
+- Protect
 - Nest Home
 
 ## How to Connect

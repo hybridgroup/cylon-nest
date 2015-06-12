@@ -23,7 +23,7 @@ Cylon.robot({
       console.log("NEST target temp F:", my.thermostat.targetTemperatureC());
       console.log("NEST target temp F:", my.thermostat.targetTemperatureF());
 
-      my.thermostat.setTargetTemperatureC(24);
+      my.thermostat.targetTemperatureC(24);
 
       my.thermostat.write("target_temperature_high_c", 30, function(err) {
         console.log("ERR OBJ =====>", err);
