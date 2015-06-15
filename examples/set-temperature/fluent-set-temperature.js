@@ -11,7 +11,7 @@ Cylon
       console.log("The Thermostat at a glance --->", data);
     });
 
-    every((30).seconds(), function(){
+    every((30).seconds(), function() {
       bot.thermostat.targetTemperatureC(24);
 
       // Set any attribute in the of the Nest thermostat that you have write

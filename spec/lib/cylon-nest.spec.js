@@ -1,11 +1,10 @@
-/* jshint expr:true */
 "use strict";
 
-var nest = source("cylon-nest");
+var nest = lib("cylon-nest");
 
-var Adaptor = source("adaptor"),
-    Thermostat = source("thermostat"),
-    Home = source("nest-home");
+var Adaptor = lib("adaptor"),
+    Thermostat = lib("thermostat"),
+    Home = lib("nest-home");
 
 describe("Cylon.Nest", function() {
   describe("#adaptors", function() {

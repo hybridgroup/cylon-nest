@@ -27,6 +27,6 @@ Cylon.robot({
       console.log("timeZone:", my.home.timeZone());
       console.log("eta:", my.home.eta());
     });
-  
+
   }
 }).start();

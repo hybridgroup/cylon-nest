@@ -16,7 +16,7 @@ Cylon.robot({
       console.log("The Nest Home at a glance:", data);
     });
 
-    every((10).seconds(), function(){
+    every((10).seconds(), function() {
       console.log("Nest home structures:", my.home.structures());
       console.log("Nest home structure name:", my.home.structureName());
       console.log("Nest home thermostats:", my.home.thermostats());

@@ -25,7 +25,7 @@ Cylon.robot({
       console.log("battery health:", my.protect.batteryHealth());
       console.log("co alarm state:", my.protect.coAlarmState());
       console.log("smoke alarm state:", my.protect.smokeAlarmState());
-      console.log("is manual test active:",my.protect.isManualTestActive());
+      console.log("is manual test active:", my.protect.isManualTestActive());
       console.log("last manual test time:", my.protect.lastManualTestTime());
       console.log("ui color state:", my.protect.uiColorState());
     });

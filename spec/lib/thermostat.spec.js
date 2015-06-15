@@ -1,7 +1,6 @@
-/* jshint expr:true */
 "use strict";
 
-var Thermostat = source("thermostat");
+var Thermostat = lib("thermostat");
 
 describe("Cylon.Drivers.Nest.Thermostat", function() {
   var driver = new Thermostat({

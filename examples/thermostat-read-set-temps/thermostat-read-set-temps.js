@@ -17,7 +17,7 @@ Cylon.robot({
       console.log("The Thermostat SnapShoot --->", data);
     });
 
-    every((10).seconds(), function(){
+    every((10).seconds(), function() {
       console.log("NEST ambient temp C:", my.thermostat.ambientTemperatureC());
       console.log("NEST ambient temp F:", my.thermostat.ambientTemperatureF());
       console.log("NEST target temp F:", my.thermostat.targetTemperatureC());
