@@ -1,6 +1,6 @@
 "use strict";
 
-var nest = lib("cylon-nest");
+var nest = lib("../");
 
 var Adaptor = lib("adaptor"),
     Thermostat = lib("thermostat"),

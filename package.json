@@ -1,7 +1,6 @@
 {
   "name": "cylon-nest",
   "version": "0.8.0",
-  "main": "lib/cylon-nest.js",
   "description": "Cylon.js adaptor for the Nest",
   "homepage": "http://cylonjs.com",
   "bugs": "https://github.com/hybridgroup/cylon-nest/issues",
